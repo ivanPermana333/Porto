@@ -2,6 +2,7 @@
 var modal = document.getElementById("myModal");
 var modalLanscape = document.getElementById("myModal-lanscape");
 var ModalLanscape = document.getElementById("Modal-lanscape");
+var ModalLanscape5 = document.getElementById("Modal-lanscape5");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var img1 = document.getElementById("myImg1");
@@ -13,7 +14,9 @@ var myImgLanscape1 = document.getElementById("myImg-lanscape1");
 var myImgLanscape2 = document.getElementById("myImg-lanscape2");
 var myImgLanscape3 = document.getElementById("myImg-lanscape3");
 var myImgLanscape4 = document.getElementById("myImg-lanscape4");
+var myImgLanscape5 = document.getElementById("myImg-lanscape5");
 var ImgLanscape = document.getElementById("lanscape");
+var ImgLanscape5 = document.getElementById("lanscape5");
 
 img.onclick = function(){
   modal.style.display = "block";
@@ -47,6 +50,10 @@ myImgLanscape4.onclick = function(){
 ModalLanscape.style.display = "block";
 ImgLanscape.src = this.src;
 }
+myImgLanscape5.onclick = function(){
+  ModalLanscape5.style.display = "block";
+  ImgLanscape5.src = this.src;
+  }
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -65,4 +72,10 @@ var span = document.getElementsByClassName("close1")[0];
 
 span.onclick = function() { 
     ModalLanscape.style.display = "none";
+}
+
+var span = document.getElementsByClassName("close2")[0];
+
+span.onclick = function() { 
+    ModalLanscape5.style.display = "none";
 }
