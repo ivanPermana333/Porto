@@ -1,5 +1,6 @@
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
 var modalLanscape = document.getElementById("myModal-lanscape");
 var ModalLanscape = document.getElementById("Modal-lanscape");
 var ModalLanscape5 = document.getElementById("Modal-lanscape5");
@@ -7,7 +8,10 @@ var ModalLanscape5 = document.getElementById("Modal-lanscape5");
 var img = document.getElementById("myImg");
 var img1 = document.getElementById("myImg1");
 var img2 = document.getElementById("myImg2");
+var img3 = document.getElementById("myImg3");
+var img4 = document.getElementById("myImg4");
 var modalImg = document.getElementById("img01");
+var modalImg2 = document.getElementById("img02");
 var myImgLanscape = document.getElementById("myImg-lanscape");
 var modalImgLanscape = document.getElementById("img-lanscape");
 var myImgLanscape1 = document.getElementById("myImg-lanscape1");
@@ -29,6 +33,14 @@ img1.onclick = function(){
 img2.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
+  }
+img3.onclick = function(){
+    modal2.style.display = "block";
+    modalImg2.src = this.src;
+  }
+img4.onclick = function(){
+    modal2.style.display = "block";
+    modalImg2.src = this.src;
   }
 myImgLanscape.onclick = function(){
 modalLanscape.style.display = "block";
@@ -60,6 +72,12 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() { 
   modal.style.display = "none";
+}
+
+var span = document.getElementsByClassName("close3")[0];
+
+span.onclick = function() { 
+    modal2.style.display = "none";
 }
 
 var span = document.getElementsByClassName("close-lanscape")[0];
