@@ -4,6 +4,7 @@ var modal2 = document.getElementById("myModal2");
 var modalLanscape = document.getElementById("myModal-lanscape");
 var ModalLanscape = document.getElementById("Modal-lanscape");
 var ModalLanscape5 = document.getElementById("Modal-lanscape5");
+var ModalLanscape6 = document.getElementById("Modal-lanscape6");
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById("myImg");
 var img1 = document.getElementById("myImg1");
@@ -19,8 +20,13 @@ var myImgLanscape2 = document.getElementById("myImg-lanscape2");
 var myImgLanscape3 = document.getElementById("myImg-lanscape3");
 var myImgLanscape4 = document.getElementById("myImg-lanscape4");
 var myImgLanscape5 = document.getElementById("myImg-lanscape5");
+var myImgLanscape6 = document.getElementById("myImg-lanscape6");
+var myImgLanscape7 = document.getElementById("myImg-lanscape7");
+var myImgLanscape8 = document.getElementById("myImg-lanscape8");
 var ImgLanscape = document.getElementById("lanscape");
 var ImgLanscape5 = document.getElementById("lanscape5");
+var ImgLanscape6 = document.getElementById("lanscape6");
+
 
 img.onclick = function(){
   modal.style.display = "block";
@@ -65,7 +71,19 @@ ImgLanscape.src = this.src;
 myImgLanscape5.onclick = function(){
   ModalLanscape5.style.display = "block";
   ImgLanscape5.src = this.src;
-  }
+}
+myImgLanscape6.onclick = function(){
+ModalLanscape6.style.display = "block";
+ImgLanscape6.src = this.src;
+}
+myImgLanscape7.onclick = function(){
+ModalLanscape6.style.display = "block";
+ImgLanscape6.src = this.src;
+}
+myImgLanscape8.onclick = function(){
+ModalLanscape6.style.display = "block";
+ImgLanscape6.src = this.src;
+}
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -78,6 +96,12 @@ var span = document.getElementsByClassName("close3")[0];
 
 span.onclick = function() { 
     modal2.style.display = "none";
+}
+
+var span = document.getElementsByClassName("close4")[0];
+
+span.onclick = function() { 
+    ModalLanscape6.style.display = "none";
 }
 
 var span = document.getElementsByClassName("close-lanscape")[0];
